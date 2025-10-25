@@ -101,12 +101,18 @@
     {% endif %} {% endfor %}
     /*Prueba  */
     // Add external website link if it exists
-    if (item.website) {
-        fields += `
-    <dt class="field">Website:</dt>
-    <dd class="field-value">
-      <a href="${item.website}" target="_blank" rel="noopener">${item.website}</a>
-    </dd>`;
+    if (item.format === "Website" && item.website) {
+        document.getElementById("item-content").innerHTML = `
+    <div class="text-center my-4">
+      <iframe 
+        src="${item.website}" 
+        width="100%" 
+        height="600" 
+        style="border: 1px solid #ccc;"
+        title="Embedded site for ${item.title}">
+      </iframe>
+      <p class="mt-2"><a href="${item.website}" target="_blank">Visit full site</a></p>
+    </div>`;
     }
     /* Fin Prueba  */
     fields += '</dl>';
