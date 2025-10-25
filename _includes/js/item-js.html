@@ -101,9 +101,11 @@
     {% endif %} {% endfor %}
     /*Prueba  */
     // Add external website link if it exists
+    // Add external website link if it exists
     if (item.website) {
-        fields += '<dt class="field">External Link:</dt> <dd class="field-value"><a class="btn btn-sm btn-primary" href="' + item.website + '" target="_blank" rel="noopener">Visit Website</a></dd>';
+        fields += '<dt class="field">External Link:</dt> <dd class="field-value"><a href="' + item.website + '" target="_blank" rel="noopener">' + item.website + '</a></dd>';
     }
+
     /* Fin Prueba  */
     fields += '</dl>';
     return fields;
