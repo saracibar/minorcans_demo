@@ -1,6 +1,6 @@
 ---
 title: About
-layout: default
+layout: page
 permalink: /about.html
 # include CollectionBuilder info at bottom
 credits: true
