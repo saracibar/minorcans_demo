@@ -1,36 +1,41 @@
 ---
 # Default home page with boxes providing collection stats
-layout: page
+layout: default
 ---
-<div class="card mb-3">
-  <div class="card-body">
-    {{ content }}
-  </div>
-</div>
-
-<div class="row">
-
-  <div class="col-md-8">
-
-    {% include index/carousel.html title="Sample Items" height="300" %}
-    {% include index.html %}
-
-  </div>
-  <div class="col-md-4">
-
-    {% include index/time.html %}
-
-    {% include index/featured-terms.html field="subject" title="Top Subjects" btn-color="primary" %}
-
-    {% include index/featured-terms.html field="location" title="Locations" btn-color="outline-secondary" %}
-
-    {% include index/objects.html %}
-
-  </div>
-  <div class="col-md-12">
-
-    {% include index/data-download.html %}
-
+<div class="container my-4">
+  <!-- Main content from index.md -->
+  <div class="row mb-4">
+    <div class="col-md-12">
+      <div class="card">
+        <div class="card-body">
+          {{ content }}
+        </div>
+      </div>
+    </div>
   </div>
 
-</div>
+  <!-- Collection visualizations -->
+  <div class="row">
+    <div class="col-md-8">
+      {% include index/carousel.html title="Sample Items" height="300" %}
+      {% include index.html %}
+
+    </div>
+    <div class="col-md-4">
+
+      {% include index/time.html %}
+
+      {% include index/featured-terms.html field="subject" title="Top Subjects" btn-color="primary" %}
+
+      {% include index/featured-terms.html field="location" title="Locations" btn-color="outline-secondary" %}
+
+      {% include index/objects.html %}
+
+    </div>
+    <div class="col-md-12">
+
+      {% include index/data-download.html %}
+
+    </div>
+
+  </div>
