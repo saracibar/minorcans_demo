@@ -34,7 +34,9 @@ author: Susanna Allés-Torrent
 #
 # Set the metadata for your collection (the name of the csv file in your _data directory that describes the objects in your collection) 
 # Use the filename of your CSV **without** the ".csv" extension! E.g. _data/demo-metadata.csv --> "demo-metadata"
-metadata: minorcans_demo
+# En el template de gh, el csv se encuentra en data: 
+# metadata: minorcans_demo
+metadata-csv: https://docs.google.com/spreadsheets/d/e/2PACX-1vQlJdBCgiiymSDO5Nx_GDv8L3ompuinJcruN-rf8dSLyj7fxllzF1J8Ra5ZZRppcMRL4vel-iNNdZ2K/pub?output=csv
 
 ##########
 # Site/Organization Branding 
